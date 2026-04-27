@@ -1,0 +1,32 @@
+[
+    {
+        "role": "user",
+        "content": "hello",
+        "timestamp": "2026-04-26T13:58:26.121153"
+    },
+    {
+        "role": "assistant",
+        "content": "Hello, Mr. Rishi. It's Sunday, April 26, 2026. Is there anything specific you'd like to work on or discuss today?",
+        "timestamp": "2026-04-26T13:58:27.654587"
+    },
+    {
+        "role": "user",
+        "content": "check my schedule",
+        "timestamp": "2026-04-26T13:58:49.583530"
+    },
+    {
+        "role": "assistant",
+        "content": "Mr. Rishi, I've checked your schedule. You have an important meeting on April 28th - I'll remind you about it tomorrow, April 27th, to ensure you're prepared. Would you like to review any other upcoming events or tasks?",
+        "timestamp": "2026-04-26T13:59:02.075756"
+    },
+    {
+        "role": "user",
+        "content": "bro my favorite artist is naam sujal and favorite cricketer is ms dhoni and favorite ipl team is csk",
+        "timestamp": "2026-04-26T14:00:51.917513"
+    },
+    {
+        "role": "assistant",
+        "content": "Noted, Mr. Rishi. Your favorites are: Naam Sujal (artist), MS Dhoni (cricketer), and CSK (IPL team). I'll keep this in mind for any future conversations or recommendations.",
+        "timestamp": "2026-04-26T14:01:05.235556"
+    }
+]

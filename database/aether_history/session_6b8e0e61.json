@@ -1,0 +1,32 @@
+[
+    {
+        "role": "user",
+        "content": "hello",
+        "timestamp": "2026-04-26T14:58:55.799038"
+    },
+    {
+        "role": "assistant",
+        "content": "Hello, Mr. Rishi. You'd like to start working on something or discuss a topic. What's on your mind today?",
+        "timestamp": "2026-04-26T14:59:11.996256"
+    },
+    {
+        "role": "user",
+        "content": "what is on 4th of june?",
+        "timestamp": "2026-04-26T15:00:33.963991"
+    },
+    {
+        "role": "assistant",
+        "content": "June 4th is your birthday, Mr. Rishi. We had discussed it earlier, and I've made a note to prepare a birthday plan for that day, which is about 40 days from now.",
+        "timestamp": "2026-04-26T15:00:59.485739"
+    },
+    {
+        "role": "user",
+        "content": "aether aaj kis kis team ka ipl match hai",
+        "timestamp": "2026-04-26T15:02:15.908440"
+    },
+    {
+        "role": "assistant",
+        "content": "Mr. Rishi, I'm not able to fetch real-time information right now. However, I can suggest checking the official IPL website or a sports app for today's match schedule, as it's April 26, 2026. Your favorite team, CSK, might be playing today.",
+        "timestamp": "2026-04-26T15:02:54.198522"
+    }
+]

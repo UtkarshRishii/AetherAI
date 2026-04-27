@@ -1,0 +1,8 @@
+groq
+python-dotenv
+edge-tts
+pygame
+requests
+chromadb
+rich
+ddgs

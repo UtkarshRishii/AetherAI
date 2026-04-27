@@ -1,0 +1,52 @@
+[
+    {
+        "role": "user",
+        "content": "hello",
+        "timestamp": "2026-04-26T13:49:38.853331"
+    },
+    {
+        "role": "assistant",
+        "content": "Hello, Mr. Rishi. It's Sunday, April 26, 2026. Is there anything specific you'd like to work on or discuss today?",
+        "timestamp": "2026-04-26T13:49:41.007218"
+    },
+    {
+        "role": "user",
+        "content": "remember on 4th of june mera birthday hai",
+        "timestamp": "2026-04-26T13:52:36.697638"
+    },
+    {
+        "role": "assistant",
+        "content": "Noted, Mr. Rishi. Your birthday is on June 4th, about 40 days from now - would you like me to prepare a reminder or plan something for the occasion?",
+        "timestamp": "2026-04-26T13:52:38.130491"
+    },
+    {
+        "role": "user",
+        "content": "yeah do",
+        "timestamp": "2026-04-26T13:52:57.687913"
+    },
+    {
+        "role": "assistant",
+        "content": "I've made a note to prepare a birthday plan for June 4th. Would you like me to send you a reminder a week before, or perhaps suggest some gift ideas or celebration plans, Mr. Rishi?",
+        "timestamp": "2026-04-26T13:52:59.130019"
+    },
+    {
+        "role": "user",
+        "content": "listen kal kaunsa date hai",
+        "timestamp": "2026-04-26T13:57:10.839493"
+    },
+    {
+        "role": "assistant",
+        "content": "Kal 27 April 2026 hai, Mr. Rishi.",
+        "timestamp": "2026-04-26T13:57:26.129224"
+    },
+    {
+        "role": "user",
+        "content": "then on 28 april ko mera ek important meeting hai yaad rakhna",
+        "timestamp": "2026-04-26T13:57:54.314822"
+    },
+    {
+        "role": "assistant",
+        "content": "Noted, Mr. Rishi. You have an important meeting on April 28th - I'll remind you about it tomorrow, April 27th, to ensure you're prepared.",
+        "timestamp": "2026-04-26T13:57:55.692612"
+    }
+]
