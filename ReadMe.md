@@ -1,137 +1,154 @@
-# Aether
+# 🚀 Aether
 
-> **A**dvanced **E**ntity for **T**hinking, **H**euristics & **E**mpirical **R**easoning
+<div align="center">
 
-A sophisticated AI assistant built for intelligent conversations — with voice output, long-term vector memory, and web-connected reasoning powered by **LLaMA 3.3 70B** via Groq.
+![Aether Banner](https://via.placeholder.com/800x200/00FFFF/000000?text=AETHER)
 
-**Created by [Utkarsh Rishi](https://www.heyfalconai.in/)**
+*Advanced Entity for Thinking, Heuristics, and Empirical Reasoning*
 
----
+[![Python Version](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Groq](https://img.shields.io/badge/Powered%20by-Groq-00FFFF)](https://groq.com)
 
-## Features
+**A sophisticated AI assistant with voice capabilities, long-term memory, and advanced reasoning. Created by [Utkarsh Rishi](mailto:workwithmrrishi@email.com)**
 
-| Capability | Details |
-|---|---|
-| 🧠 **Conversational AI** | Groq-hosted LLaMA 3.3 70B — fast, logical, coherent responses |
-| 🔊 **Voice output** | Microsoft Edge TTS renders every response as natural-sounding audio |
-| 🗄️ **Persistent memory** | Chroma vector DB stores long-term context across sessions |
-| 🔍 **Web search** | DuckDuckGo integration for real-time information retrieval |
-| 🖥️ **Rich CLI** | Beautiful terminal UI via the Rich library with full markdown support |
-| 🔐 **Session control** | Unique session IDs and instant memory-clear for fresh starts |
+[📖 Documentation](#-usage) • [🔧 Installation](#-installation) • [🤝 Contributing](#-contributing)
+
+</div>
 
 ---
 
-## Prerequisites
+## ✨ Features
 
-- **Python 3.8+** — verify with `python --version`
-- **Groq API key** — obtain one at [groq.com](https://groq.com)
+| Feature | Description |
+|---------|-------------|
+| 🧠 **Conversational AI** | Powered by Groq's LLaMA 3.3 70B model for highly logical and coherent responses |
+| 🎤 **Voice Interaction** | Integrated Text-to-Speech (TTS) using Microsoft Edge TTS for audible responses |
+| 🧠 **Persistent Memory** | Long-term memory storage using Chroma vector database for context-aware conversations |
+| 🎨 **Rich CLI Interface** | Beautiful, colorful terminal interface with Rich library for enhanced user experience |
+| 🔄 **Session Management** | Unique session IDs with memory clearing capabilities |
+| 🌐 **Web Search Integration** | DuckDuckGo search functionality for real-time information retrieval |
+| 📝 **Markdown Support** | Responses rendered with proper markdown formatting |
 
----
+## 📋 Prerequisites
 
-## Installation
+- 🐍 Python 3.8 or higher
+- 🔑 A Groq API key (obtain from [groq.com](https://groq.com))
 
-**1. Clone the repository**
-```bash
-[git clone <repository-url>](https://github.com/UtkarshRishii/AetherAI.git)
-cd Aether
-```
+## 🛠️ Installation
 
-**2. Create a virtual environment** *(recommended)*
-```bash
-python -m venv .venv
-source .venv/bin/activate       # Windows: .venv\Scripts\activate
-```
+### Quick Start
 
-**3. Install dependencies**
-```bash
-pip install -r requirements.txt
-```
+1. **Clone the repository** 📥
+   ```bash
+   git clone <repository-url>
+   cd Aether
+   ```
 
-**4. Configure environment variables**
+2. **Create a virtual environment** (recommended) 🌐
+   ```bash
+   python -m venv .venv
+   # On Windows
+   .venv\Scripts\activate
+   # On macOS/Linux
+   source .venv/bin/activate
+   ```
 
-Create a `.env` file in the project root:
-```env
-GROQ_API_KEY=your_groq_api_key_here
-```
+3. **Install dependencies** 📦
+   ```bash
+   pip install -r requirements.txt
+   ```
 
----
+4. **Set up environment variables** ⚙️
 
-## Usage
+   Create a `.env` file in the root directory:
+   ```env
+   GROQ_API_KEY=your_groq_api_key_here
+   MODEL_NAME=llama-3.3-70b-versatile
+   ```
+
+## 🚀 Usage
+
+### Start the Assistant
 
 ```bash
 python run_aether.py
 ```
 
-Type your messages at the `⟩ You` prompt. Aether responds both in text and audio.
+### 💬 Interaction
 
-### Commands
+- Type your messages in the prompt: `⟩ You`
+- The AI will respond both **textually** (with rich formatting) and **audibly** 🎵
+- Use special commands:
+  - `exit` or `quit`: Shutdown the assistant ⏹️
+  - `clear`: Wipe current session memory 🗑️
 
-| Command | Action |
-|---|---|
-| `exit` / `quit` | Gracefully shut down Aether |
-| `clear` | Wipe the current session memory |
+### ⚙️ Configuration
 
----
+Customize settings in `config.py`:
+- 🤖 Model selection (default: llama-3.3-70b-versatile)
+- 🌡️ Temperature settings
+- 📏 Token limits
 
-## Configuration
-
-Edit `config.py` to tune Aether's behaviour:
-
-| Setting | Default | Description |
-|---|---|---|
-| `model` | `llama-3.3-70b-versatile` | Groq model identifier |
-| `temperature` | `0.7` | Sampling temperature |
-| `max_tokens` | `4096` | Maximum tokens per response |
-
----
-
-## Project Structure
+## 🏗️ Architecture
 
 ```
 Aether/
-├── core/
-│   ├── main.py                  # Application entry point
-│   ├── brain/
-│   │   ├── brain_service.py     # Core reasoning logic
-│   │   ├── groq_service.py      # Groq API integration
-│   │   ├── chat_service.py      # Message handling
-│   │   └── prompt.py            # System prompts
-│   ├── memory/
-│   │   └── memory_manager.py    # Chroma vector DB operations
-│   ├── services/
-│   │   └── tts.py               # Text-to-speech engine
-│   └── utils/                   # Shared utilities
-├── database/
-│   ├── vector_store/            # Chroma persistent storage
-│   ├── aether_history/          # Per-session logs
-│   └── learning_data/           # Accumulated learning data
-├── config.py                    # All configuration constants
-├── requirements.txt             # Python dependencies
-└── run_aether.py                # Launcher script
+├── 🧠 core/
+│   ├── main.py              # Main application entry point
+│   ├── 🧠 brain/            # AI processing modules
+│   │   ├── brain_service.py # Core brain logic
+│   │   ├── groq_service.py  # Groq API integration
+│   │   ├── chat_service.py  # Chat processing
+│   │   └── prompt.py        # System prompts
+│   ├── 💾 memory/           # Memory management
+│   │   └── memory_manager.py # Vector database operations
+│   ├── 🔧 services/         # External services
+│   │   └── tts.py           # Text-to-speech engine
+│   └── 🛠️ utils/            # Utility functions
+├── 💾 database/             # Persistent data storage
+│   ├── vector_store/        # Chroma vector database
+│   ├── aether_history/      # Session history
+│   └── learning_data/       # Learning data
+├── ⚙️ config.py             # Configuration settings
+├── 📦 requirements.txt      # Python dependencies
+└── ▶️ run_aether.py          # Application launcher
 ```
 
+## 🤝 Contributing
+
+We love contributions! Here's how you can help:
+
+1. 🍴 Fork the repository
+2. 🌿 Create a feature branch: `git checkout -b feature/amazing-feature`
+3. 💾 Commit your changes: `git commit -m 'Add amazing feature'`
+4. 📤 Push to the branch: `git push origin feature/amazing-feature`
+5. 🔄 Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 📞 Contact
+
+**Created by Utkarsh Rishi** 👨‍💻
+
+### 🌐 Social Media & Links
+
+- 📧 **Business Email**: [workwithmrrishi@email.com](mailto:workwithmrrishi@email.com)
+- 📸 **Instagram**: [@utkarshrishhi](http://instagram.com/utkarshrishhi)
+- 🤖 **Falcon Instagram**: [@heyfalcon.ai](http://instagram.com/heyfalcon.ai)
+- 📢 **Telegram Channel**: [@ArcDevsOG](https://t.me/ArcDevsOG)
+- 💬 **Telegram Group**: [@ArcAgents](https://t.me/ArcAgents)
+- 🌐 **Falcon Website**: [heyfalconai.in](https://www.heyfalconai.in/)
+- 💬 **WhatsApp Channel**: [Join Here](https://whatsapp.com/channel/0029Vb792mHInlqWSB6k6f38)
+
 ---
 
-## Contributing
+<div align="center">
 
-Pull requests are welcome. Fork the repo, make your changes on a feature branch, and open a PR — all contributions are appreciated.
+**Made with ❤️ by Utkarsh Rishi**
 
----
+⭐ If you like this project, give it a star!
 
-## License
-
-Released under the [MIT License](LICENSE).
-
----
-
-## Contact & Community
-
-| Platform | Link |
-|---|---|
-| ✉️ Business email | [workwithmrrishi@email.com](mailto:workwithmrrishi@email.com) |
-| 📸 Instagram | [@utkarshrishhi](https://instagram.com/utkarshrishhi) |
-| 🦅 Falcon Instagram | [@heyfalcon.ai](https://instagram.com/heyfalcon.ai) |
-| ✈️ Telegram channel | [ArcDevsOG](https://t.me/ArcDevsOG) |
-| 👥 Telegram group | [ArcAgents](https://t.me/ArcAgents) |
-| 🌐 Falcon website | [heyfalconai.in](https://www.heyfalconai.in/) |
-| 💬 WhatsApp channel | [Join here](https://whatsapp.com/channel/0029Vb792mHInlqWSB6k6f38) |
+</div></content>
